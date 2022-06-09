@@ -9,3 +9,153 @@ h1, h2, h3 {
 .question--title {
   font-size: 20px;
 }
+
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+.color_change {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+.marginbox_flex {
+  display: flex;
+  justify-content: center;
+}
+.marginbox {
+  width: 200px;
+  height: 200px;
+  margin: 0 75px;
+}
+.marginbox:first-child {
+  background-color: #0008ff;
+}
+.marginbox:nth-child(2) {
+  background-color: #22ff00;
+}
+
+.floatbox {
+  position: relative;
+  left: 50%;
+  float: left;
+  margin-bottom: 40px;
+}
+.box200 {
+  position: relative;
+  left: -50%;
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+}
+.box200:nth-child(2) {
+  background-color: #0008ff;
+}
+.clear {
+  clear: both;
+}
+
+.flexbox_flex {
+  display: flex;
+  justify-content: center;
+}
+.flexbox200 {
+  text-align: center;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+}
+.flexbox200:first-child {
+  background-color: #ff0000;
+}
+.flexbox200:nth-child(2) {
+  background-color: #0008ff;
+}
+.flexbox200:nth-child(3) {
+  background-color: #ff8400;
+}
+
+.flexbox_flex_Q6 {
+  display: flex;
+  justify-content: center;
+}
+.flexbox200_Q6 {
+  text-align: center;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+}
+.flexbox200_Q6:first-child {
+  background-color: #00ff51;
+}
+.flexbox200_Q6:nth-child(2) {
+  background-color: #d4ff00;
+}
+.flexbox200_Q6:nth-child(3) {
+  background-color: #ff00e1;
+}
+
+.vanishbox_flex {
+  display: flex;
+  justify-content: center;
+}
+.vanishbox200 {
+  width: 200px;
+  height: 200px;
+}
+.vanishbox200:first-child {
+  display: none;
+  background-color: #0008ff;
+}
+.vanishbox200:nth-child(2) {
+  background-color: #ff0000;
+}
+.vanishbox200:nth-child(3) {
+  background-color: #00ff51;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+  .color_change {
+    background-color: #007bff;
+  }
+  .marginbox {
+    margin: 0 25px;
+  }
+  .floatbox, .box200 {
+    position: static;
+    clear: left;
+  }
+  .flexbox_flex {
+    flex-direction: row-reverse;
+  }
+  .flexbox200_Q6:first-child {
+    order: 2;
+  }
+  .flexbox200_Q6:nth-child(2) {
+    order: 3;
+  }
+  .flexbox200_Q6:nth-child(3) {
+    order: 1;
+  }
+  .vanishbox200:first-child {
+    display: block;
+  }
+  .vanishbox200:nth-child(2) {
+    display: none;
+  }
+  
+  
+  
+  
+}
